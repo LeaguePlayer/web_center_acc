@@ -1,0 +1,136 @@
+2009-07-16 13:35:39 (MSD)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open 'Z:/home/tid/www/user_img/izdat/_thumbs/_р°5-2.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 113	
+2009-07-29 16:19:19 (MSD)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open 'Z:/home/kat/www/user_img/horse_tour/_thumbs/_87.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 113	
+2009-07-29 16:19:19 (MSD)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open 'Z:/home/kat/www/user_img/horse_tour/_thumbs/_f2.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 113	
+2009-12-17 23:21:12 (Уральское время (зима))	2 Warning	mkdir(z:/home/sweet15w.ru/wwwz:): Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2009-12-17 23:21:12 (Уральское время (зима))	2 Warning	mkdir(z:/home/sweet15w.ru/wwwz:/home): Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2009-12-17 23:21:12 (Уральское время (зима))	2 Warning	mkdir(z:/home/sweet15w.ru/wwwz:/home/sweet15w.ru): Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2009-12-17 23:21:12 (Уральское время (зима))	2 Warning	mkdir(z:/home/sweet15w.ru/wwwz:/home/sweet15w.ru/www): Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2009-12-17 23:21:12 (Уральское время (зима))	2 Warning	mkdir(z:/home/sweet15w.ru/wwwz:/home/sweet15w.ru/www/ss): Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2009-12-17 23:21:12 (Уральское время (зима))	2 Warning	mkdir(z:/home/sweet15w.ru/wwwz:/home/sweet15w.ru/www/ss/userfiles/): Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2009-12-17 23:21:12 (Уральское время (зима))	2 Warning	opendir(z:/home/sweet15w.ru/wwwz:/home/sweet15w.ru/www/ss/userfiles/): failed to open dir: Invalid argument	File: fns_tinybrowser.php	Line: 363	
+2009-12-17 23:21:12 (Уральское время (зима))	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2009-12-17 23:21:12 (Уральское время (зима))	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2009-12-17 23:21:17 (Уральское время (зима))	2 Warning	opendir(z:/home/sweet15w.ru/wwwz:/home/sweet15w.ru/www/ss/userfiles/): failed to open dir: Invalid argument	File: fns_tinybrowser.php	Line: 363	
+2009-12-17 23:21:17 (Уральское время (зима))	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2009-12-17 23:21:17 (Уральское время (зима))	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2009-12-17 23:21:19 (Уральское время (зима))	2 Warning	mkdir(z:/home/sweet15w.ru/wwwz:): Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2009-12-17 23:21:19 (Уральское время (зима))	2 Warning	mkdir(z:/home/sweet15w.ru/wwwz:/home): Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2009-12-17 23:21:19 (Уральское время (зима))	2 Warning	mkdir(z:/home/sweet15w.ru/wwwz:/home/sweet15w.ru): Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2009-12-17 23:21:19 (Уральское время (зима))	2 Warning	mkdir(z:/home/sweet15w.ru/wwwz:/home/sweet15w.ru/www): Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2009-12-17 23:21:19 (Уральское время (зима))	2 Warning	mkdir(z:/home/sweet15w.ru/wwwz:/home/sweet15w.ru/www/ss): Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2009-12-17 23:21:19 (Уральское время (зима))	2 Warning	mkdir(z:/home/sweet15w.ru/wwwz:/home/sweet15w.ru/www/ss/userfiles/): Invalid argument	File: fns_tinybrowser.php	Line: 5	
+2009-12-17 23:21:19 (Уральское время (зима))	2 Warning	opendir(z:/home/sweet15w.ru/wwwz:/home/sweet15w.ru/www/ss/userfiles/): failed to open dir: Invalid argument	File: fns_tinybrowser.php	Line: 363	
+2009-12-17 23:21:19 (Уральское время (зима))	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2009-12-17 23:21:19 (Уральское время (зима))	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2011-05-20 09:18:25 (MSD)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/www/iqplus/www/htdocs/uploadfiles/page/_thumbs/_1.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 113	
+2011-05-20 10:15:40 (MSD)	8 Notice	Undefined offset:  1	File: fns_tinybrowser.php	Line: 244	
+2011-05-20 10:15:40 (MSD)	8 Notice	Undefined offset:  0	File: fns_tinybrowser.php	Line: 340	
+2011-05-20 10:15:40 (MSD)	8 Notice	Undefined offset:  1	File: fns_tinybrowser.php	Line: 244	
+2011-05-20 10:15:40 (MSD)	8 Notice	Undefined offset:  0	File: fns_tinybrowser.php	Line: 340	
+2011-05-20 10:16:19 (MSD)	8 Notice	Undefined offset:  1	File: fns_tinybrowser.php	Line: 244	
+2011-05-20 10:16:19 (MSD)	8 Notice	Undefined offset:  0	File: fns_tinybrowser.php	Line: 340	
+2011-05-20 10:16:19 (MSD)	8 Notice	Undefined offset:  1	File: fns_tinybrowser.php	Line: 244	
+2011-05-20 10:16:19 (MSD)	8 Notice	Undefined offset:  0	File: fns_tinybrowser.php	Line: 340	
+2011-05-23 12:42:01 (MSD)	2 Warning	rmdir(/www/iqplus/www/htdocs/uploadfiles/page/9/_thumbs/) [<a href='function.rmdir'>function.rmdir</a>]: Directory not empty	File: folders.php	Line: 78	
+2011-05-23 12:42:01 (MSD)	2 Warning	rmdir(/www/iqplus/www/htdocs/uploadfiles/page/9/) [<a href='function.rmdir'>function.rmdir</a>]: Directory not empty	File: folders.php	Line: 81	
+2011-05-23 12:42:10 (MSD)	2 Warning	rmdir(/www/iqplus/www/htdocs/uploadfiles/page/9/_thumbs/) [<a href='function.rmdir'>function.rmdir</a>]: Directory not empty	File: folders.php	Line: 78	
+2011-05-23 12:42:10 (MSD)	2 Warning	rmdir(/www/iqplus/www/htdocs/uploadfiles/page/9/) [<a href='function.rmdir'>function.rmdir</a>]: Directory not empty	File: folders.php	Line: 81	
+2011-05-23 12:42:17 (MSD)	2 Warning	rmdir(/www/iqplus/www/htdocs/uploadfiles/page/9/_thumbs/) [<a href='function.rmdir'>function.rmdir</a>]: Directory not empty	File: folders.php	Line: 78	
+2011-05-23 12:42:17 (MSD)	2 Warning	rmdir(/www/iqplus/www/htdocs/uploadfiles/page/9/) [<a href='function.rmdir'>function.rmdir</a>]: Directory not empty	File: folders.php	Line: 81	
+2012-04-05 08:33:43 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:33:43 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:33:43 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:33:43 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:33:46 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:33:46 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:33:46 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:33:46 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:34:04 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:34:04 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:34:04 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:34:04 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:34:06 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:34:06 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:34:06 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:34:06 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:34:44 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:34:44 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:34:44 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:34:44 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:39:35 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:39:35 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:39:35 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-05 08:39:35 (PKT)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-24 13:52:14 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-24 13:52:15 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-24 13:52:15 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-24 13:52:15 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-24 13:52:17 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-24 13:52:17 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-24 13:52:17 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-04-24 13:52:17 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2012-08-21 14:21:43 (MSK)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/l/lplayer/test.asite-studio.ru/public_html/uploadfiles/pages/_thumbs/_svidetelstvo_acc_primer_2.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 113	
+2012-10-10 21:56:16 (MSK)	8 Notice	Undefined offset:  1	File: fns_tinybrowser.php	Line: 244	
+2012-10-10 21:56:26 (MSK)	8 Notice	Undefined offset:  1	File: fns_tinybrowser.php	Line: 244	
+2012-10-10 21:56:35 (MSK)	8 Notice	Undefined offset:  1	File: fns_tinybrowser.php	Line: 244	
+2012-10-10 21:56:45 (MSK)	8 Notice	Undefined offset:  1	File: fns_tinybrowser.php	Line: 244	
+2012-10-10 21:59:16 (MSK)	8 Notice	Undefined offset:  1	File: fns_tinybrowser.php	Line: 244	
+2012-10-10 21:59:42 (MSK)	8 Notice	Undefined offset:  1	File: fns_tinybrowser.php	Line: 244	
+2012-10-10 22:06:43 (MSK)	8 Notice	Undefined offset:  1	File: fns_tinybrowser.php	Line: 244	
+2012-10-10 22:06:46 (MSK)	8 Notice	Undefined offset:  1	File: fns_tinybrowser.php	Line: 244	
+2012-10-10 22:10:26 (MSK)	2 Warning	imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: gd-jpeg, libjpeg: recoverable error: Corrupt JPEG data: 2078 extraneous bytes before marker 0xd9
+	File: fns_tinybrowser.php	Line: 147	
+2012-10-10 22:10:26 (MSK)	2 Warning	imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: '/home/l/lplayer/test.asite-studio.ru/public_html/uploadfiles/pages/system_naucert.jpg' is not a valid JPEG file	File: fns_tinybrowser.php	Line: 147	
+2012-10-10 22:10:26 (MSK)	2 Warning	imagesx(): supplied argument is not a valid Image resource	File: fns_tinybrowser.php	Line: 49	
+2012-10-10 22:10:26 (MSK)	2 Warning	imagesy(): supplied argument is not a valid Image resource	File: fns_tinybrowser.php	Line: 50	
+2012-10-10 22:10:26 (MSK)	2 Warning	imagejpeg(): supplied argument is not a valid Image resource	File: fns_tinybrowser.php	Line: 129	
+2012-10-10 22:10:26 (MSK)	2 Warning	imagedestroy(): supplied argument is not a valid Image resource	File: tinybrowser.php	Line: 128	
+2013-01-21 14:38:08 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-01-21 14:38:11 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-01-21 14:39:24 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-01-21 14:39:26 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:41:14 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:41:17 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:41:39 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:41:42 (MSK)	8 Notice	Undefined offset: 1	File: fns_tinybrowser.php	Line: 244	
+2013-02-24 20:41:42 (MSK)	2 Warning	mime_content_type(doc) [<a href='function.mime-content-type'>function.mime-content-type</a>]: failed to open stream: No such file or directory	File: fns_tinybrowser.php	Line: 337	
+2013-02-24 20:41:42 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:43:32 (MSK)	8 Notice	Undefined offset: 1	File: fns_tinybrowser.php	Line: 244	
+2013-02-24 20:43:32 (MSK)	2 Warning	mime_content_type(doc) [<a href='function.mime-content-type'>function.mime-content-type</a>]: failed to open stream: No such file or directory	File: fns_tinybrowser.php	Line: 337	
+2013-02-24 20:43:32 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:43:41 (MSK)	8 Notice	Undefined offset: 1	File: fns_tinybrowser.php	Line: 244	
+2013-02-24 20:43:41 (MSK)	2 Warning	mime_content_type(doc) [<a href='function.mime-content-type'>function.mime-content-type</a>]: failed to open stream: No such file or directory	File: fns_tinybrowser.php	Line: 337	
+2013-02-24 20:43:41 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:43:46 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:43:48 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:43:58 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:44:00 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:44:20 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:44:23 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:44:29 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-02-24 20:44:31 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-03-12 21:12:02 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-03-12 21:12:08 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-03-12 21:12:10 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-03-12 21:12:15 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-03-12 21:12:15 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-03-12 21:12:18 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-03-12 21:15:28 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-03-12 21:15:30 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-03-12 21:15:54 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-03-12 21:16:02 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-02 21:27:25 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-02 21:27:28 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-02 21:27:47 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-02 21:27:49 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-02 21:30:01 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-02 21:30:05 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-02 21:30:08 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-02 21:30:18 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-02 21:30:20 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-02 21:30:29 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-02 21:30:32 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-26 08:35:49 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-26 08:35:52 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-26 08:36:31 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	
+2013-04-26 08:36:34 (MSK)	8192 	Function sql_regcase() is deprecated	File: fns_tinybrowser.php	Line: 355	

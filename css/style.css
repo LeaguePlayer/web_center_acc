@@ -1,0 +1,160 @@
+*{ font-family: georgia, times new roman, times, serif; font-size: 12pt; color: #6b6b6b; }
+
+/* �������� ������ ������� */
+html { background: url( ../images/background.jpg ) center top; }
+html, body { margin: 0; padding: 0; border: 0; width: 100%; height: 100%; }
+body { position: relative; min-width: 1150px; height: 100%; width: 100%; margin: 0 auto; }
+
+#shadow { position: absolute; z-index: 2; display: block; width: 100%; left: 0; top: 0; background: url( ../images/shadow.png ) left top repeat-x; }
+#wrap { position: relative; z-index: 3; display: block; width: 1150px; margin: auto; background: url( ../images/wrap.png ) center top repeat-y; }
+#header { display: block; width: 1074px; height: 413px; margin-left: 38px; background: url( ../images/header.jpg ); }
+#header.admin { height: 150px; }
+#menuDiv { display: block; width: 1106px; height: 64px; margin-left: 22px; background: url( ../images/content.jpg ) center top repeat-y; }
+#content { display: block; width: 1074px; margin-left: 38px; background: url( ../images/content.jpg ) left top repeat-y; }
+/*#content * { padding: 0; margin: 0; }*/
+#content p, #content h1, #content br { margin: 0; padding: 0; }
+#content div.admin { margin: 0 20px 0 20px; padding: 20px 0 0 0; background: url( ../images/header.jpg ) left top; }
+div.contentBlock { display: block; width: 100%; height: 20px; background: url( ../images/header.jpg ); }
+#contentEnter { display: block; float: left; width: 265px; }
+#contentMain { display: block; float: left; width: 809px; text-align: left; }
+div.lineCommercialTop { display: block; float: left; width: 20px; height: 60px; background: url( ../images/lineCommercialTop.jpg ) left top no-repeat; }
+#contentMain * { color: #6c3b27; }
+div.contentMainText { display: block; float: left; width: 769px; background: url( ../images/lineHeading.jpg ) right 30px no-repeat; }
+h1.heading { font-size:18pt; }
+#commercial { display: block; width: 1090px; height: 68px; margin-left: 30px; background: url( ../images/content.jpg ) center bottom repeat-y; }
+#commercial div { display: block; width: 1090px; height: 68px; background: url( ../images/commercial.png ) left bottom no-repeat; }
+#commercial.admin, #commercial.admin div { height: 38px; }
+img.lineCommercial { margin-left: 273px; }
+div.lineLine { display: block; width: 266px; height: 1px; background: url( ../images/lineContent.jpg ) 265px top no-repeat; }
+#footer { display: block; width: 1090px; height: 86px; margin-left: 30px; background: url( ../images/footer.jpg ); }
+div.development { display: block; width: 1090px; height: 82px; background: url( ../images/development.jpg ) left top no-repeat; }
+div.copyright { display: block; color: #ded5bb; float: left; margin: 32px 0 0 35px; font-size: 10pt; }
+div.site { display: block; color: #ded5bb; float: right; margin: 32px 10px 0 0; font-size: 10pt; }
+div.aSite { display: block; float: right; margin: 15px 25px 0 0; }
+div.logo { display: block; width: 85px; height: 103px; float: left; margin: 11px 5px 5px 35px; }
+div.ass { display: block; float: left; margin: 22px 0 0 0; color: #684207; font-size: 18pt; }
+div.logo a { display: block; width: 85px; height: 103px; background: url( ../images/logo.png ) left top no-repeat; }
+div.phone { display: block; width: 82px; height: 77px; float: right; margin: 16px 11px 0 20px; background: url( ../images/phone.png ) left top no-repeat; }
+div.contacts { display: block; float: right; text-align: right; margin: 22px 0 0 0; }
+div.contacts b, div.contacts a, div.contacts div  { color: #684207; font-size: 14pt; }
+#footerShadow { position: relative; z-index: 3; display: block; width: 1150px; height: 30px; margin: auto; background: url( ../images/footerShadow.png ) left top no-repeat; }
+
+/* ���������� ��������� ����� */
+input, textarea, select, option, img.captchaImage { width: 250px; border: 1px solid #979797; padding: 2px 2px 2px 4px; margin-bottom: 1px; font-size: 12px; }
+textarea { height: 100px; resize: none; width: 242px; overflow: auto; }
+input[type="checkbox"], input[type="radio"] { width: 15px; height: 15px; border: 0; margin: 0; padding: 0; background: transparent; }
+input[type="text"], input[type="password"] { width: 242px; }
+input[type="submit"], input[type="button"], input[type="reset"] { background: #d4d0c8; width: 123px; margin-right: 1px; }
+select { padding: 2px 2px 2px 0; }
+option, optgroup { border: 0; width: 220px; padding: 0 2px 0 2px; margin: 0; }
+optgroup { font-style: normal; }
+fieldset { border: 0; margin-bottom: 2px; }
+fieldset input[type="radio"], fieldset input[type="checkbox"] { float: left; margin-right: 2px; clear: both; }
+input[type="file"] { background: transparent; padding: 0; width: 248px; height: 21px; }
+input.file + * + a, input[type="file"] + a { margin-left: 66px; }
+textarea.ckeditor, textarea.mceEditor { width: 715px; height: 257px; }
+img { border: 0; }
+.line { clear: both; display: block; height: 1px; width: 100%; }
+table { border-collapse: collapse; }
+table td { padding: 0px; }
+
+/* �������� ������� */
+.left { display: block; float: left; width: 150px; margin-top: 2px; }
+input.title { width: 717px; }
+.block { height: 20px; }
+
+/* ������ ��������� */
+.statusCancel { display: block; border: 2px solid #ffd700; background: #ffffdd; margin: 10px 0 10px 0; padding: 2px; clear: both; }
+.statusOk { display: block; border: 2px solid #00ff00; background: #f0fff0; margin: 10px 0 10px 0; padding: 2px; clear: both; }
+
+/* ������ �������� */
+.preview { display: block; float: left; width: 122px; height: 83px; margin: 0 10px 10px 0; }
+.preview a img { width: 122px; height: 83px; background-position: center center; background-repeat: no-repeat; }
+
+img.captchaImage { float: left; margin-right: 2px; margin: 0 2px 0 0; padding: 0; height: 42px; width: 123px; cursor: pointer; }
+input.captchaCode { width: 115px; margin-bottom: 2px; }
+
+.filesDownload { display: block; padding: 0 5px 0 5px; }
+
+#menu li a.submenu { width: 118px; padding: 20px 6px 0 5px; height: 44px; }
+#menu li a.submenumembership { width: 118px; padding: 14px 6px 0 5px; height: 50px; }
+#menu li a.submenureviews { height: 64px; padding: 14px 6px 0 5px; width: 118px; }
+#menu li a.submenunews { width: 118px; padding: 20px 6px 0 5px; height: 44px; }
+#menu li a.submenuinformation { width: 118px; padding: 14px 6px 0 5px; height: 50px; }
+#menu li a.submenuenter { width: 127px; padding: 14px 6px 0 5px; height: 50px; }
+#menu li a.submenucontacts { width: 100px; padding: 20px 6px 0 5px; height: 44px; }
+#menu li a.submenucooperation { width: 128px; padding: 20px 6px 0 5px; height: 44px; background: transparent; }
+#menu li a.submenusertification  { width: 192px; padding: 5px 6px 15px 5px; height: 44px; background: transparent; }
+
+#menu li a { color: #f0eed4; text-decoration: none; height: 64px; text-align: center; }
+#menu li ul li a { height: auto; text-align: left; }
+// #menu li a.item{ background: url( ../../images/menuItem.jpg ) left top repeat-x; }
+#menu li ul li a, #menu li ul li a:hover, #menu li ul li a.item { background: transparent; }
+#menu, #menu ul { list-style: none; margin: 0; padding: 0; float: left; width: 100%; }
+#menu { padding: 0 0 0 0; }
+#menu ul { background: #653d13; z-index: 1000000000; }
+#menu li { float: left; position: relative; background: none; list-style-type: none; }
+#menu li ul { display: none; position: absolute; padding: 8px 0; width: 200px; border: 2px solid #482b0d; }
+#menu a { display: block; }
+#menu a:hover, #menu a.item {  }
+#menu li:hover, #menu li.jshover {  }
+#menu li li a { width: 180px; padding: 4px 10px; }
+#menu li:hover ul,#menu li.jshover ul { display: block; }
+#menu li:hover li ul, #menu li.jshover li ul { display: none; width: 200px; top: -9px; left: 170px; }
+#menu li:hover li:hover ul, #menu li.jshover li.jshover ul { display: block; }
+
+#menu li.item { background: url( ../images/menuItemLi.jpg ) left top repeat-x; }
+#menu li.item div { background: url( ../images/menuItemDiv.jpg ) left top no-repeat; }
+#menu li.item a.item { background: url( ../images/menuItemA.jpg ) right top no-repeat; }
+
+#menu li.submenu.item, #menu li.submenucooperation.item { background: url( ../images/menuItemLi.gif ) left top repeat-x; }
+#menu li.submenu.item div { background: url( ../images/menuItemDiv.gif ) left top no-repeat; }
+#menu li.submenucooperation.item a.item { background: url( ../images/menuItemA.gif ) right top no-repeat; }
+
+#menu li { background: url( ../images/menuLi.jpg ) left top repeat-x; }
+#menu li div { background: url( ../images/menuDiv.jpg ) left top no-repeat; }
+#menu li a { background: url( ../images/menuA.jpg ) right top no-repeat; }
+
+#menu ul li, #menu ul div, #menu ul li a, #menu ul li div a, #menu ul li a:hover, #menu ul li div a:hover, #menu ul li.item, #menu ul li.item div, #menu ul li.item a.item, #menu ul li.item div a.item { background: #653d13; }
+#menu ul li.item a.item, #menu ul li.item div a.item { text-decoration: underline; }
+
+
+.href { text-align: right; }
+#content div.href a { color: #000000; }
+#content span.date { color: #000000; font-size: 10pt; }
+#content a.name { margin-right: 10px; color: #1f1626; font-weight: bold; font-size: 14pt; }
+
+div.users { display: block; width: 246px; height: auto; margin: 0 0 0 10px; text-align: center; overflow: hidden; color: #2f190a; }
+div.users a { color: #6c3b27; }
+div.usersTop { display: block; width: 246px; height: 27px; background: url( ../images/usersTop.jpg ) left top no-repeat; }
+div.usersMiddle { display: block; width: 246px; background: url( ../images/usersMiddle.jpg ) left top repeat-y; text-align: left; }
+div.usersMiddle div.usersContent { display: block; width: 213px; height: auto; overflow: hidden; margin: 0 18px 0 15px; color: #2f190a; }
+div.usersMiddle div.usersContent a, div.usersMiddle div.usersContent div { color: #2f190a; }
+div.usersBottom { display: block; width: 246px; height: 27px; background: url( ../images/usesrBottom.jpg ) left top no-repeat; }
+
+div.label { margin: 2px 0 4px 0; }
+input.usersInput { background: url( ../images/usersInput.jpg ) left top repeat-x; color: #ffffff; font-size: 12pt; border: 0;  }
+input[type='submit'].usersInput { margin: 10px 0 0 0; background: url( ../images/usersInputSubmit.jpg ) left top repeat-x; padding: 5px; }
+div.usersLine { display: block; height: 20px; background: url( ../images/usersLine.jpg ) center center no-repeat; }
+
+#content div.navigate { background: url( ../images/lineHeading.jpg ) right top no-repeat; color: #1f1626; height: 44px; }
+#content div.navigate a, #content div.navigate span { color: #1f1626; }
+
+div.usersBlock { display: block; width: 246px; height: auto; margin: 0 0 0 10px; text-align: center; overflow: hidden; }
+
+div.clickPicture { display: block; width: 80px; height: 120px; float: left; }
+div.clickText { display: block; float: left; margin: 20px 0 0 0; }
+div.clickText a { font-size: 16pt; text-decoration: none; }
+
+div.usersFile { margin-left: -66px; }
+div.usersBlock div input[type='submit'] { width: 235px; }
+div.usersBlock div input { width: 226px; }
+div.usersBlock div textarea { width: 226px; height: 50px; }
+
+#usersFilesForm { display: none; }
+.files { display: block; width: 244px; height: auto; overflow: hidden; text-align: left; margin: 0 0 20px 0; }
+.files div.filesDownloads { display: block; width: 22px; height: auto; float: left; margin: 0 10px 0 0; }
+.files div.filesDownloads a { display: block; width: 22px; height: 18px; background: url( ../images/filesDownloads.jpg ) left top no-repeat; }
+.files div.filesDownloads a:hover { background-position: left bottom; }
+.files div.filesDownloads div { color: #744530; text-align: center; font-size: 9pt; }
+.files div.filesName, .files div.filesName a { font-size: 10pt; color: #1f1626; }

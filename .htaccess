@@ -1,0 +1,12 @@
+Options +Includes +FollowSymLinks -Indexes
+AddHandler server-parsed .shtml
+DirectoryIndex index.shtml index.php index.html index.html
+AddDefaultCharset windows-1251
+
+php_value upload_max_filesize 30M
+php_value post_max_size 30M
+php_value set_time_limit 1000
+php_value max_execution_time 1000
+
+RewriteEngine On
+RewriteRule ^(.*/)?([^/.]+)/([^/.]+)(/?)$ $1?$2=$3 [L,QSA]

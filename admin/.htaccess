@@ -1,0 +1,4 @@
+AuthName "authorization"
+AuthType Basic
+AuthUserFile /home/l/lplayer/test.asite-studio.ru/public_html/admin/.htpasswd
+Require valid-user

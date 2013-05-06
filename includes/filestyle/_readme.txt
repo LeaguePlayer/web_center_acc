@@ -1,0 +1,1 @@
+стилизация input type file, select option

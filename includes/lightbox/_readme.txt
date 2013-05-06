@@ -1,0 +1,6 @@
+<div id='gallery'>
+	<div class='preview'><a href='uploadfiles/photogallerySimple/b".$data['picture']."' title='".$data['name']."'><img src='images/transparent.gif' alt='Превью' style='background-image: url(uploadfiles/photogallerySimple/".$data['picture'].");' /></a></div>
+	<div class='preview'><a href='uploadfiles/photogallerySimple/b".$data['picture']."' title='".$data['name']."'><img src='images/transparent.gif' alt='Превью' style='background-image: url(uploadfiles/photogallerySimple/".$data['picture'].");' /></a></div>
+	<div class='preview'><a href='uploadfiles/photogallerySimple/b".$data['picture']."' title='".$data['name']."'><img src='images/transparent.gif' alt='Превью' style='background-image: url(uploadfiles/photogallerySimple/".$data['picture'].");' /></a></div>
+	<div class='preview'><a href='uploadfiles/photogallerySimple/b".$data['picture']."' title='".$data['name']."'><img src='images/transparent.gif' alt='Превью' style='background-image: url(uploadfiles/photogallerySimple/".$data['picture'].");' /></a></div>
+</div>
