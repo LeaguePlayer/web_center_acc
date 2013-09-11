@@ -1,4 +1,4 @@
 cfg/config.php
 admin/.htpasswd
-uploadfiles/
+/uploadfiles/*
 *~

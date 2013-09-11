@@ -197,7 +197,7 @@
 	
 							if( isset( $_POST['usersRegister'] ) ) {
 	
-								$usersFlag = true;
+								$usersFlag = true;                                                       
 	
 								if( empty( $_POST['usersRegisterName'] ) ) {
 									$usersFlag = false;
@@ -208,6 +208,13 @@
 									$usersFlag = false;
 									echo "<div class=statusCancel>Вы ввели некорректный адрес эл. почты</div>";
 								}
+                                
+                                include_once $_SERVER['DOCUMENT_ROOT'] . '/securimage/securimage.php';
+                                $securimage = new Securimage();
+                                if ($securimage->check($_POST['captcha_code']) == false) {
+                                    $usersFlag = false;
+									echo "<div class=statusCancel>Некорректный проверочный код</div>";           
+                                }
 	
 								if( $usersFlag ) {
 									$result = $db -> fetch( "SELECT id FROM users WHERE mail LIKE '".$_POST['usersRegisterEmail']."' " );
@@ -268,6 +275,9 @@
 							<div><input type='text' name='usersRegisterName' value='".$_POST['usersRegisterName']."' class='usersInput' /></div>
 							<div class='label'>эл. почта</div>
 							<div><input type='text' name='usersRegisterEmail' value='".$_POST['usersRegisterEmail']."' class='usersInput' /></div>
+                            <div class='label'>проверочный код</div>
+                            <div><img id='captcha' src='/securimage/securimage_show.php' alt='CAPTCHA Image' onclick=\"document.getElementById('captcha').src = '/securimage/securimage_show.php?' + Math.random(); return false\" style='cursor: pointer;' /></div>
+                            <div><input type='text' name='captcha_code' class='usersInput' /></div>
 							<div><input type='submit' name='usersRegister' value='вступить' class='usersInput' /></div>
 							<div class='usersLine'></div>
 							<div><a href='$url/page/enter/' title='Примечание'>Примечания</a></div>
@@ -358,7 +368,8 @@
 					<div class='usersBottom'></div>
 				</div>
 			</form>";
-
+            
+            echo "<div id='btnapi_bigbuttoncontainer'><div id='btnapi_buttontype1block01' style='background: url('http://static-cache.ru.uaprom.net/image/bonus/buttons/b0b_middle.png?r=80862') 0 0 repeat-x; float: left; height: 31px;'> <div id='btnapi_buttontype1block02' style='background: url('http://static-cache.ru.uaprom.net/image/bonus/buttons/b0b_left.png?r=80862') 0 0 no-repeat; height: 31px;'> <div id='btnapi_buttontype1block03' style='background: url('http://static-cache.ru.uaprom.net/image/bonus/buttons/b0b_right.png?r=80862') 100% 0 no-repeat; height: 31px;'> <a href='http://ocenka-surgut.tiu.ru/' style='display: block; color: #464646; text-decoration: none; font-size: 10px; line-height: 22px; padding: 0 18px;'><span id='btnapi_buttontype1text' style='white-space: nowrap; font-family: Arial, Sans; font-weight: normal; color: #464646; font-size: 10px;'>ООО «Бюро экспертиз товаров и услуг»</span></a> <a id='btnapi_buttontype1block04' href='http://tiu.ru/' target='_blank' style='display: block; line-height:9px; font-size:10px; margin-top:-1px; text-align:center; text-decoration:none;'> <span style='color:#464646; font-family:calibri, arial, sans;'> Tiu<span style='color:#1e8aab;'>.ru</span> </span> </a> </div> </div></div></div>";
 		}
 
 		return $flag;

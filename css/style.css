@@ -78,12 +78,12 @@ input.captchaCode { width: 115px; margin-bottom: 2px; }
 
 #menu li a.submenu { width: 118px; padding: 20px 6px 0 5px; height: 44px; }
 #menu li a.submenumembership { width: 118px; padding: 14px 6px 0 5px; height: 50px; }
-#menu li a.submenureviews { height: 64px; padding: 14px 6px 0 5px; width: 118px; }
+#menu li a.submenureviews { height: 50px; padding: 14px 6px 0 5px; width: 118px; }
 #menu li a.submenunews { width: 118px; padding: 20px 6px 0 5px; height: 44px; }
 #menu li a.submenuinformation { width: 118px; padding: 14px 6px 0 5px; height: 50px; }
 #menu li a.submenuenter { width: 127px; padding: 14px 6px 0 5px; height: 50px; }
 #menu li a.submenucontacts { width: 100px; padding: 20px 6px 0 5px; height: 44px; }
-#menu li a.submenucooperation { width: 128px; padding: 20px 6px 0 5px; height: 44px; background: transparent; }
+#menu li a.submenucooperation { width: 128px; padding: 5px 6px 15px 5px; height: 44px; background: transparent; }
 #menu li a.submenusertification  { width: 192px; padding: 5px 6px 15px 5px; height: 44px; background: transparent; }
 
 #menu li a { color: #f0eed4; text-decoration: none; height: 64px; text-align: center; }
