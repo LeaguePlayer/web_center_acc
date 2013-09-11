@@ -45,6 +45,7 @@
 		<link rel="stylesheet" href="includes/slides/css/global.css">
 		<script src="includes/slides/js/slides.min.jquery.js"></script>
 		<script src='includes/slides/js/slides.init.js'></script>
+        <script src='includes/animations/animation.js'></script>
 
 	</head>
 	<body>

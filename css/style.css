@@ -88,7 +88,7 @@ input.captchaCode { width: 115px; margin-bottom: 2px; }
 
 #menu li a { color: #f0eed4; text-decoration: none; height: 64px; text-align: center; }
 #menu li ul li a { height: auto; text-align: left; }
-// #menu li a.item{ background: url( ../../images/menuItem.jpg ) left top repeat-x; }
+/* #menu li a.item{ background: url( ../../images/menuItem.jpg ) left top repeat-x; } */
 #menu li ul li a, #menu li ul li a:hover, #menu li ul li a.item { background: transparent; }
 #menu, #menu ul { list-style: none; margin: 0; padding: 0; float: left; width: 100%; }
 #menu { padding: 0 0 0 0; }
@@ -137,6 +137,7 @@ input.usersInput { background: url( ../images/usersInput.jpg ) left top repeat-x
 input[type='submit'].usersInput { margin: 10px 0 0 0; background: url( ../images/usersInputSubmit.jpg ) left top repeat-x; padding: 5px; }
 div.usersLine { display: block; height: 20px; background: url( ../images/usersLine.jpg ) center center no-repeat; }
 
+
 #content div.navigate { background: url( ../images/lineHeading.jpg ) right top no-repeat; color: #1f1626; height: 44px; }
 #content div.navigate a, #content div.navigate span { color: #1f1626; }
 
@@ -158,3 +159,8 @@ div.usersBlock div textarea { width: 226px; height: 50px; }
 .files div.filesDownloads a:hover { background-position: left bottom; }
 .files div.filesDownloads div { color: #744530; text-align: center; font-size: 9pt; }
 .files div.filesName, .files div.filesName a { font-size: 10pt; color: #1f1626; }
+
+a.userButton { margin: 10px 0 0 0; background: url( ../images/usersInputSubmit.jpg ) left top repeat-x; padding: 5px; color: #fff; text-decoration: none; }
+a.animationButton { overflow: hidden; display: block; padding: 5px 2px; }
+a.animationButton span { color: #fff; display: inline-block; position: relative; }
+div.userActions { text-align: center; margin-top: 20px; padding: 0 7px; }
