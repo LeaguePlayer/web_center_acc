@@ -106,6 +106,10 @@
 				$feedbackFlag = false;
 				echo "<div class='statusCancel'>Не корректно заполнено поле 'Для каких целей запрос'</div>";
 			}
+            
+            if( stringSimple( $_POST['feedbackEml'] ) != '') {
+				$feedbackFlag = false;
+			}
 
 			if( stringSimple( $_POST['feedbackCode'] ) != stringSimple( $_SESSION['secpic'] ) ) {
 				$feedbackFlag = false;
@@ -151,6 +155,7 @@
 			<div class='line'></div>
 			<div><textarea name='feedbackMessage' onFocus='if( this.value == \"Для каких целей запрос\" ) this.value = \"\";' onBlur='if( this.value == \"\" ) this.value = \"Для каких целей запрос\";'>".$_POST['feedbackMessage']."</textarea></div>
 			<div class='line'></div>
+            <input type='text' name='feedbackEml' class=fieldeml' value='".$_POST['feedbackEml']."'/>
 			<div>
 				<img src='includes/secpic/secpic.php' onClick='this.src=\"includes/secpic/secpic.php?\"+Math.random()' alt='' title='Нажмите для смены изображения проверочного кода' class='captchaImage' />
 				<input type='text' name='feedbackCode' value='Проверочный код' onFocus='if( this.value == \"Проверочный код\" ) this.value = \"\";' onBlur='if( this.value == \"\" ) this.value = \"Проверочный код\";' class='captchaCode' /><br />
