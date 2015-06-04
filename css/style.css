@@ -133,7 +133,9 @@ div.usersMiddle div.usersContent a, div.usersMiddle div.usersContent div { color
 div.usersBottom { display: block; width: 246px; height: 27px; background: url( ../images/usesrBottom.jpg ) left top no-repeat; }
 
 div.label { margin: 2px 0 4px 0; }
-input.usersInput { background: url( ../images/usersInput.jpg ) left top repeat-x; color: #ffffff; font-size: 12pt; border: 0;  }
+input.usersInput, textarea.usersInput { background: url( ../images/usersInput.jpg ) left top repeat-x; color: #ffffff; font-size: 12pt; border: 0;  }
+textarea.usersInput { width: 207px;  }
+textarea.usersInput { background-size: 20px 100%; }
 input[type='submit'].usersInput { margin: 10px 0 0 0; background: url( ../images/usersInputSubmit.jpg ) left top repeat-x; padding: 5px; }
 div.usersLine { display: block; height: 20px; background: url( ../images/usersLine.jpg ) center center no-repeat; }
 
@@ -160,7 +162,10 @@ div.usersBlock div textarea { width: 226px; height: 50px; }
 .files div.filesDownloads div { color: #744530; text-align: center; font-size: 9pt; }
 .files div.filesName, .files div.filesName a { font-size: 10pt; color: #1f1626; }
 
-a.userButton { margin: 10px 0 0 0; background: url( ../images/usersInputSubmit.jpg ) left top repeat-x; padding: 5px; color: #fff; text-decoration: none; }
+a.userButton { margin: 10px 0 0 0; background: url( ../images/usersInputSubmit.jpg ) left top repeat-x; padding: 5px; color: #fff; text-decoration: none; background-size: contain; }
 a.animationButton { overflow: hidden; display: block; padding: 5px 2px; }
 a.animationButton span { color: #fff; display: inline-block; position: relative; }
 div.userActions { text-align: center; margin-top: 20px; padding: 0 7px; }
+#usersExpert { margin-top: 20px; }
+h3.caption { font-size: 16px; color: #2f190a; margin-top: 0; }
+abbr { display: inline-block; vertical-align: top; height: 14px; font-size: 14px; line-height: 1; margin-left: 10px; border-bottom: 1px dotted #2f190a; color: #2f190a; cursor: help; }

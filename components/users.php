@@ -115,6 +115,9 @@
 	// пользователи. пользовательская часть
 	function usersUser( $db = 0, $page = '', $item = 0 ) {
 
+    $result = $db -> fetch( "SELECT email FROM configEmail WHERE view LIKE 'users' " );
+    $supportEmail = ( !$result['error'] ) ? $result[0]['email'] : 'no-repeat@'.urlGet();
+
 		echo "<script type='text/javascript' src='includes/jscookies/cookies.js'></script>";
 		echo "<script type='text/javascript' src='includes/jsmd5/md5.js'></script>";
 
@@ -213,7 +216,7 @@
                                 $securimage = new Securimage();
                                 if ($securimage->check($_POST['captcha_code']) == false) {
                                     $usersFlag = false;
-									echo "<div class=statusCancel>Некорректный проверочный код</div>";           
+									echo "<div class=statusCancel>Некорректный проверочный код</div>";
                                 }
 	
 								if( $usersFlag ) {
@@ -232,10 +235,6 @@
 									
                                     
                                     if( !$result['error'] ) {
-	
-										$result = $db -> fetch( "SELECT email FROM configEmail WHERE view LIKE 'users' " );
-                                        
-                                        $supportEmail = ( !$result['error'] ) ? $result[0]['email'] : 'no-repeat@'.urlGet();
                                         
                                         $usersTheme = "Регистрация пользователя на сайте ".urlGet();
 										$usersBody = "<b>Регистрация пользователя</b><br /><br />Вы зарегестрировались на сайте <a href='".urlGet()."'>".urlGet()."</a><br />
@@ -368,9 +367,96 @@
 					<div class='usersBottom'></div>
 				</div>
 			</form>";
-            
-            echo "<div id='btnapi_bigbuttoncontainer'><div id='btnapi_buttontype1block01' style='background: url('http://static-cache.ru.uaprom.net/image/bonus/buttons/b0b_middle.png?r=80862') 0 0 repeat-x; float: left; height: 31px;'> <div id='btnapi_buttontype1block02' style='background: url('http://static-cache.ru.uaprom.net/image/bonus/buttons/b0b_left.png?r=80862') 0 0 no-repeat; height: 31px;'> <div id='btnapi_buttontype1block03' style='background: url('http://static-cache.ru.uaprom.net/image/bonus/buttons/b0b_right.png?r=80862') 100% 0 no-repeat; height: 31px;'> <a href='http://ocenka-surgut.tiu.ru/' style='display: block; color: #464646; text-decoration: none; font-size: 10px; line-height: 22px; padding: 0 18px;'><span id='btnapi_buttontype1text' style='white-space: nowrap; font-family: Arial, Sans; font-weight: normal; color: #464646; font-size: 10px;'>ООО «Бюро экспертиз товаров и услуг»</span></a> <a id='btnapi_buttontype1block04' href='http://tiu.ru/' target='_blank' style='display: block; line-height:9px; font-size:10px; margin-top:-1px; text-align:center; text-decoration:none;'> <span style='color:#464646; font-family:calibri, arial, sans;'> Tiu<span style='color:#1e8aab;'>.ru</span> </span> </a> </div> </div></div></div>";
-            echo "<div class='userActions'><a class='userButton animationButton' href='/page/sro/'><span data-text1='Вступление в Строительное СРО' data-text2='Быстро' data-text3='Надежно' data-text4='Рассрочка'>Вступление в Строительное СРО</span></a></div>";
+			
+            echo "<div class='userActions'><a class='userButton animationButton' href='/page/sro/'><span data-labels='Вступление в Строительное | и Проектное СРО | Быстро | Надежно | Рассрочка'>Вступление в Строительное СРО</span></a></div>";
+            echo "<div class='userActions'><a class='userButton animationButton' href='/page/qualup/'><span style='height:37px;' data-labels='Краткосрочные курсы повышения квалификации: | Исследование почерка и подписей | Исследование реквизитов документов | Исследование технического состояния АМТС | Исследование АМТС: стоимость ремонта и оценки | Исследование инженерных систем'>Краткосрочные курсы повышения квалификации:</span></a></div>";
+            echo "<div class='userActions'><a class='userButton animationButton' href='/page/sertification/'><span style='height:37px;' data-labels='Добровольная сертификация менеджмента качества | Антикризисные скидки - дисконт 20%'>Добровольная сертификация менеджмента качества</span></a></div>";
+        
+        		if ( $_GET['page'] == 'forappraisers' ) {
+      				$damageValues = array(
+	              'model' => '',
+	              'year' => '',
+	              'date' => '',
+	              'place' => '',
+	              'parts_damaged' => '',
+	              'lost_commodity' => '',
+	              'email' => '',
+	            );
+	            $damageErrors = array();
+	            if ( isset($_POST['Damage']) ) {
+	              if ( empty($_POST['Damage']['model']) || empty($_POST['Damage']['year']) || empty($_POST['Damage']['date']) || empty($_POST['Damage']['place']) || empty($_POST['Damage']['parts_damaged']) ) {
+	                $damageErrors[] = "Заполнены не все поля.";
+	              }
+	              if ( !emailCheck( $_POST['Damage']['email'] ) ) {
+	                $damageErrors[] = "Указан некорректный E-mail.";
+	              }
+	              if ( empty($damageErrors) ) {
+	                $mailSubject = "Заявка на оценку стоимости ущерба после ДТП";
+	                $mailBody = "<b>Поступила заявка на рассчет стоимости оценки ущерба</b><br>";
+	                $mailBody .= "<b>Марка, модель: </b>".$_POST['Damage']['model']."<br>";
+	                $mailBody .= "<b>Месяц и год выпуска: </b>".$_POST['Damage']['year']."<br>";
+	                $mailBody .= "<b>Дата ДТП: </b>".$_POST['Damage']['date']."<br>";
+	                $mailBody .= "<b>Место ДТП: </b>".$_POST['Damage']['place']."<br>";
+	                $mailBody .= "<b>Какие детали повреждены: </b>".$_POST['Damage']['parts_damaged']."<br>";
+	                $mailBody .= "<b>Утрата товарной стоимости: </b>".($_POST['Damage']['lost_commodity'] ? "Да" : "Нет")."<br>";
+	                $mailBody .= "<b>E-mail отправителя: </b>".$_POST['Damage']['email']."<br>";
+	                if ( mailSend( "center-acc.ru", 'welcome@center-acc.ru', $mailSubject, $mailBody, "Служба технической поддержки", 'no-repeat@'.urlGet() ) ) {
+	                  $damageOk = "Ваша заявка принята и будет обработана в ближайшее время";
+	                }
+	              } else {
+	                $damageValues = array(
+	                  'model' => $_POST['Damage']['model'],
+	                  'year' => $_POST['Damage']['year'],
+	                  'date' => $_POST['Damage']['date'],
+	                  'place' => $_POST['Damage']['place'],
+	                  'parts_damaged' => $_POST['Damage']['parts_damaged'],
+	                  'lost_commodity' => $_POST['Damage']['lost_commodity'],
+	                  'email' => $_POST['Damage']['email'],
+	                );
+	              }
+	            }
+	            echo "<form id='expertForm' method='POST' action='".$_SERVER['REQUEST_URI']."#expertForm'>".
+	              "<div id='usersExpert' class='users' style='display: block;'>".
+	                "<div class='usersTop'></div>".
+	                "<div class='usersMiddle'>".
+	                  "<div class='usersContent'>".
+
+	                    "<h3 class='caption'>Запрос расчета стоимости услуг по оценке АМТС</h3>";
+
+	                    foreach ( $damageErrors as $error ) {
+	                      echo "<div class='statusCancel'>".$error."</div>";
+	                    }
+
+	                    if ( $damageOk ) {
+	                      echo "<div class='statusOk'>".$damageOk."</div>";
+	                    }
+
+	                    echo "<div><input placeholder='Марка, модель' type='text' value='".$damageValues['model']."' name='Damage[model]' class='usersInput' onkeypress='if( event.keyCode == 13 ) { return false; }'></div>".
+
+	                    "<div><input placeholder='Месяц, год выпуска' type='text' value='".$damageValues['year']."' name='Damage[year]' class='usersInput' onkeypress='if( event.keyCode == 13 ) { return false; }'></div>".
+
+	                    "<div><input placeholder='Дата ДТП' type='text' value='".$damageValues['date']."' name='Damage[date]' class='usersInput' onkeypress='if( event.keyCode == 13 ) { return false; }'></div>".
+
+	                    "<div><input placeholder='Место ДТП' type='text' value='".$damageValues['place']."' name='Damage[place]' class='usersInput' onkeypress='if( event.keyCode == 13 ) { return false; }'></div>".
+
+	                    "<div><textarea placeholder='Какие детали повреждены' name='Damage[parts_damaged]' rows='3' class='usersInput' onkeypress='if( event.keyCode == 13 ) { return false; }'>".$damageValues['parts_damaged']."</textarea></div>".
+
+	                    "<div class='label'>Утрата товарной стоимости</div>".
+	                    "<div>".
+	                    	"<input type='checkbox' name='Damage[lost_commodity]' ".($damageValues['lost_commodity'] ? "checked='checked'" : "").">".
+	                    	"<abbr title='Уменьшение стоимости транспортного средства, вызванное преждевременным ухудшением товарного (внешнего) вида автомобиля и его эксплуатационных качеств вследствие ДТП и последующего ремонта'>[?]</abbr>".
+                    	"</div>".
+
+	                    "<div><input placeholder='E-mail' type='text' value='".$damageValues['email']."' name='Damage[email]' class='usersInput' onkeypress='if( event.keyCode == 13 ) { return false; }'></div>".
+
+	                    "<div><input type='submit' name='usersExpert' value='Отправить' class='usersInput'></div>".
+
+	                  "</div>".
+	                "</div>".
+	                "<div class='usersBottom'></div>".
+	              "</div>".
+	          	"</form>";
+        		}
         }
 
 		return $flag;

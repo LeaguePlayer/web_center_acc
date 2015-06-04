@@ -56,15 +56,30 @@ $(document).ready(function() {
         }
     }
 
-    var $span = $('.animationButton span');
-    var labels = [$span.data('text1'), $span.data('text2'), $span.data('text3'), $span.data('text4')];
-    var next = 1;
-    var animateText = function() {
-        $span.animate({top: 40}, 300, function() {
-            $(this).css('top', '-40px').text(labels[next++]).animate({top: 0}, 300);
-            if ( next == 4 ) next = 0;
-        });
-    };
 
-    setInterval(animateText, 2000);
+    $.fn.animateButton = function(options) {
+    	var options = $.extend({
+    		speed: 300,
+    		duration: 2000
+    	}, options || {});
+
+        return this.each(function() {
+            var _this = $(this);
+            var labels = _this.data('labels').split('|');
+            var count = labels.length;
+            if ( count < 2 )
+            	return true;
+
+            var next = 1;
+        	setInterval(function() {
+        		_this.stop(true, true).animate({top: 40}, options.speed, function() {
+		            $(this).css('top', '-40px').text(labels[next++]).animate({top: 0}, options.speed);
+		            if ( next == count ) next = 0;
+		        });
+        	}, options.duration);
+        });
+    }
+
+
+    $('.animationButton span').animateButton();
 });

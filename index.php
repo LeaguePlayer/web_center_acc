@@ -30,7 +30,7 @@
 		<title>Межрегиональная Некоммерческая Организация Некоммерческое Партнерство "Альянс Судебных Специалистов" | <?php echo $title; ?></title>
 		<base href='<?php echo $url; ?>' />
 
-		<link rel='stylesheet' type='text/css' href='css/style.css' />
+		<link rel='stylesheet' type='text/css' href='css/style.css?v=4' />
 		<!--[if  IE]><link rel='stylesheet' type='text/css' href='css/styleIe.css'><![endif]-->
 		<link rel='stylesheet' type='text/css' href='includes/lightbox/css/jquery.lightbox-0.5.css' media='screen' />
 
@@ -45,7 +45,7 @@
 		<link rel="stylesheet" href="includes/slides/css/global.css">
 		<script src="includes/slides/js/slides.min.jquery.js"></script>
 		<script src='includes/slides/js/slides.init.js'></script>
-        <script src='includes/animations/animation.js'></script>
+        <script src='includes/animations/animation.js?v=3'></script>
 
 	</head>
 	<body>
